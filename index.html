@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cherry Play</title>
+    <link rel="shortcut icon" href="img/cherry.png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="navbar-container">
-                <nav>
-                    <a href="#"><img src="img/cherry.png" alt="Cherry Play Logo" class="logo">Cherry Play</a>
-                    <ul class="navbar-items">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Store</a></li>
-                        <li><a href="#">Live TV</a></li>
-                        <li><a href="#">Categories</a></li>
+        <header>        
+            <nav class="navbar-container">
+                <div class="navbar-logo-container">
+                    <a href="#" class="navbar-logo">Cherry Play</a>
+                </div>
+                <div class="navbar-list-container">
+                    <ul>
+                        <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+                        <li class="navbar-item"><a href="#" class="navbar-link">Store</a></li>
+                        <li class="navbar-item"><a href="#" class="navbar-link">Live TV</a></li>
+                        <li class="navbar-item"><a href="#" class="navbar-link">Categories</a></li>
                     </ul>
+                </div>
+                <div class="navbar-btn-container">
                     <a href="#" class="navbar-btn">Sign in</a>
-                </nav>
-            </div>
+                </div>                  
+            </nav>
         </header>
         <main>
             <div class="main-banner">
@@ -61,7 +67,7 @@
 				</ul>
 			</section>
             <section class="pricing-container">
-				<h1>Plans and prices</h1>
+				<h2>Plans and prices</h2>
 				<p>Choose your multiscreen plan</p>
 				<div class="plans-container">
 					<div class="plan">
@@ -100,7 +106,7 @@
 				</div>
 			</section>
             <section class="contact-container">
-				<h2>Contact us</h1>
+				<h2>Contact us</h2>
 				<form>
 					<input type="text" name="name" placeholder="Enter your name">
 					<input type="email" name="email" placeholder="Enter your e-mail">

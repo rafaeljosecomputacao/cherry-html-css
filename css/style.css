@@ -1,0 +1,116 @@
+/* Import colors */
+
+@import '../config/colors.css';
+
+/* Import fonts */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+/* General */
+
+* {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+    background-color: var(--background-color);
+}
+
+.container h1, h2, h3, p {
+	color: var(--text-dark);
+}
+
+/* Header */
+
+.navbar-container {	
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbar); 
+    padding: 0.4rem 2rem;  
+}
+
+.navbar-logo-container {
+    flex-grow: 1;
+}
+
+.navbar-logo {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.navbar-list-container {
+    flex-grow: 2; 
+}
+
+.navbar-list-container ul { 
+    display: flex;
+    justify-content: start;  
+    list-style: none;
+}
+
+.navbar-item {
+    margin-left: 30px;
+}
+
+.navbar-link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+	color: var(--text-light);
+	text-decoration: none;
+	transition: .5s;
+}
+
+.navbar-link:hover {
+	color: var(--primary);
+}
+
+.navbar-btn-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-btn {
+	background-color: var(--primary);
+    color: var(--text-light);
+	border-radius: 4px;
+    text-decoration: none;
+	transition: .5s;
+	font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.navbar-btn:hover {
+	background-color: var(--hover-btn);
+}
