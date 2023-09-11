@@ -115,6 +115,16 @@ body {
 	background-color: var(--hover-btn);
 }
 
+/* Navbar mobile */
+
+.navbar-mobile-btn {
+    display: none;
+}
+
+.navbar-mobile-menu {
+    display: none;
+}
+
 /* Main banner */
 
 .main-banner {
@@ -324,6 +334,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     transition: .5s;
+	cursor: pointer;
 }
 
 .contact-container input[type=submit]:hover {
@@ -364,4 +375,205 @@ footer span {
     font-family: "Roboto";
     font-weight: 300;
     font-size: 18px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 2560px) {
+	.main-banner {
+		padding: 34em 0;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.main-banner {
+		padding: 16em 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.plans-container, .specialties-container ul {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        padding: 0.4rem 1rem;
+    }
+
+	.navbar-item {
+        display: none;
+    }
+
+    .navbar-btn-container {
+        display: none;
+    }
+
+	.navbar-mobile-btn {
+        display: block;
+    }
+
+	.navbar-mobile-btn button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+	.navbar-mobile-menu {
+		background-color: var(--navbar); 
+		margin-top: -20px;
+	}
+
+	.navbar-mobile-menu ul {
+        display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-bottom: 1rem;
+		margin-left: -40px;
+    }
+
+    .navbar-mobile-menu .navbar-item {
+        display: block;
+		padding-top: 1rem;
+		margin-left: 0;
+    }
+
+	.navbar-mobile-menu .navbar-btn-container {
+        display: block;
+		text-align: center;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+    }
+
+	.navbar-mobile-menu .navbar-btn {
+		display: block;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+    }
+
+    .navbar-mobile-menu-open {
+        display: block;
+    }
+
+	.main-banner {
+		padding: 8.2em 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.navbar-logo {
+		font-size: 22px;
+	}
+
+	.main-banner {
+		padding: 4.8em 0;
+	}
+
+	.main-banner h1 {
+		font-size: 40px;
+	}
+	
+	.main-banner p {
+		font-size: 20px;
+	}
+
+	html, body {
+	  overflow-x: hidden;
+	}
+
+	.plan {
+		max-width: 100%;
+	}
+
+	.contact-container {
+		padding: 3em 2em;
+	}
+
+	.contact-container input, .contact-container textarea {
+		width: 100%;
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.main-banner {
+		padding: 2.8em 0;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.navbar-logo {
+		font-size: 20px;
+	}
+
+	.main-banner {
+		padding: 2.4em 0;
+	}
+
+	.main-banner h1 {
+		font-size: 34px;
+	}
+	
+	.main-banner p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.navbar-logo {
+		font-size: 18px;
+	}
+
+	.main-banner {
+		padding: 2em 0;
+	}
+
+	.main-banner h1 {
+		font-size: 30px;
+	}
+	
+	.main-banner p {
+		font-size: 14px;
+	}
+
+	.specialties-container ul li h3 {
+		font-size: 24px;
+	}
+
+	.specialties-container ul li p {
+		font-size: 14px;
+	}
+
+	.pricing-container h2 {
+		font-size: 24px;
+	}
+	
+	.pricing-container p {
+		font-size: 14px;
+	}
+
+	.plan li {
+		font-size: 16px;
+	}
+	
+	.plan .price {
+		font-size: 16px;
+	}
+	
+	.plan .plan-name {
+		font-size: 24px;
+	}
+	
+	.plan .plan-btn {
+		font-size: 24px;
+	}
+
+	.contact-container h2 {
+		font-size: 24px;
+	}	
 }
