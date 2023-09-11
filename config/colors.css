@@ -1,0 +1,11 @@
+/* Application color configuration */
+
+:root {
+    --primary: #E63946;
+    --hover-btn: #A31420;
+    --background-color: #EAE9ED;
+    --text-light: #F4F4F6;
+    --text-dark: #1E1C22; 
+    --navbar: #141216;
+    --plan-box: #AFAAB9;
+}
